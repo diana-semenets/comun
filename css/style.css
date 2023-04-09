@@ -58,7 +58,7 @@ a {
 
 .index {
   max-width: 500px;
-  margin: 30px 0 0 20px;
+  margin: 30px 20px 0 20px;
   padding-left: 30px;
   padding-bottom: 30px;
   background: rgba(255, 213, 150, 0.91);
@@ -152,4 +152,57 @@ a {
   border: 1px solid #FFA800;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .sum__subtitle-inner {
+    grid-template-columns: 150px 150px;
+    justify-content: center;
+    gap: 30px;
+  }
+  .sum__item {
+    grid-template-columns: 50px 160px 160px;
+    gap: 30px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .index, .tariff {
+    padding-left: 10px;
+  }
+  .tariff-list__item {
+    grid-template-columns: 180px 100px;
+  }
+  .index__subtitle-inner {
+    grid-template-columns: 220px 100px;
+  }
+  .index-list__item {
+    grid-template-columns: 100px 100px 100px;
+  }
+  .item-input {
+    width: 100px;
+  }
+  .sum__item {
+    grid-template-columns: 50px 150px 150px;
+    gap: 15px;
+  }
+  .sum__item-input input {
+    width: 150px;
+  }
+}
+@media (max-width: 400px) {
+  .index__subtitle-inner {
+    grid-template-columns: 180px 100px;
+  }
+  .index-list__item {
+    grid-template-columns: 80px 100px 100px;
+    gap: 10px;
+  }
+  .sum__item {
+    grid-template-columns: 50px 130px 130px;
+    gap: 15px;
+  }
+  .sum__item-input input {
+    width: 130px;
+  }
 }/*# sourceMappingURL=style.css.map */
