@@ -11,29 +11,29 @@
 <body>
     <main class="main">
         <div class="card">
-            <div class="card-inner">
-                <section class="tariff">
+            <div class="card-inner" id="card">
+                <section class="tariff" id="tariff">
                     <p class="tariff-title">Тарифи</p>
                     <ul class="tariff-list">
                         <li class="tariff-list__item item">
                             <p class="item-title">Світло до 250кВт</p>
-                            <input type="text" class="item-input">
+                            <input type="text" class="item-input" id="item-input-before">
                         </li>
                         <li class="tariff-list__item">
                             <p class="item-title">Світло більше 250кВт</p>
-                            <input type="text" class="item-input">
+                            <input type="text" class="item-input" id="item-input-after">
                         </li>
                         <li class="tariff-list__item">
                             <p class="item-title">Газ</p>
-                            <input type="text" class="item-input">
+                            <input type="text" class="item-input" id="item-input-gas">
                         </li>
                         <li class="tariff-list__item">
                             <p class="item-title">Розподіл газу</p>
-                            <input type="text" class="item-input">
+                            <input type="text" class="item-input" id="input-gas-abonent">
                         </li>
                         <li class="tariff-list__item">
                             <p class="item-title">Вода</p>
-                            <input type="text" class="item-input">
+                            <input type="text" class="item-input" id="item-input-water">
                         </li>
                         <li class="tariff-list__item">
                             <p class="item-title">Абонплата вода</p>
@@ -42,7 +42,7 @@
                     </ul>
                 </section>
 
-                <section class="index">
+                <section class="index" id="index">
                     <div class="index-title">Показники</div>
                     <div class="index__subtitle-inner">
                         <p class="index-subtitle">Попередні</p>
@@ -51,7 +51,7 @@
                     <ul class="index-list">
                         <li class="index-list__item item">
                             <p class="item-title">Світло /день</p>
-                            <input type="text" class="item-input">
+                            <input type="text" class="item-input" >
                             <input type="text" class="item-input">
                         </li>
                         <li class="index-list__item">
@@ -61,13 +61,13 @@
                         </li>
                         <li class="index-list__item">
                             <p class="item-title">Газ</p>
-                            <input type="text" class="item-input">
-                            <input type="text" class="item-input">
+                            <input type="text" class="item-input" id="input-gas-begin">
+                            <input type="text" class="item-input"  id="input-gas-end">
                         </li>
                         <li class="index-list__item">
                             <p class="item-title">Вода</p>
-                            <input type="text" class="item-input">
-                            <input type="text" class="item-input">
+                            <input type="text" class="item-input" id="input-water-begin">
+                            <input type="text" class="item-input" id="input-water-end">
                         </li>
                     </ul>
                 </section>
@@ -79,20 +79,22 @@
                     </div>
                     <div class="sum__inner">
                         <div class="sum__item">
-                            <div class="sum__item-img"><img src="img/icon-water.png" alt=""></div>
-                            <div class="sum__item-input"><input type="text" ></div>
-                            <div class="sum__item-input"><input type="text"></div>
+                            <div class="sum__item-img"><img src="img/icon-flash.png" alt=""></div>
+                            <div class="sum__item-input"></div>
+                            <div class="sum__item-input"></div>
                         </div>
+                        
                         <div class="sum__item">
                             <div class="sum__item-img"><img src="img/icon-fire.png" alt=""></div>
-                            <div class="sum__item-input"><input type="text" ></div>
-                            <div class="sum__item-input"><input type="text"></div>
+                            <div class="sum__item-input" id="sum-gas"></div>
+                            <div class="sum__item-input" id="sum-gas-abonent"></div>
                         </div>
                         <div class="sum__item">
-                            <div class="sum__item-img"><img src="img/icon-flash.png" alt=""></div>
-                            <div class="sum__item-input"><input type="text" ></div>
-                            <div class="sum__item-input"><input type="text"></div>
+                            <div class="sum__item-img"><img src="img/icon-water.png" alt=""></div>
+                            <div class="sum__item-input" id="sum-water"></div>
+                            <div class="sum__item-input"></div>
                         </div>
+                        
                     </div>
                     <p class="sum-title">Всього з абонплатами</p>
                     <div class="sum-sum"></div>
