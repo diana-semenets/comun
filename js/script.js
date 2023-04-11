@@ -16,8 +16,10 @@ let inputGasAbonent = document.querySelector('#input-gas-abonent');
 let inputWater = document.querySelector('#item-input-water');
 let inputWaterBegin = document.querySelector('#input-water-begin');
 let inputWaterEnd = document.querySelector('#input-water-end');
-let sumGasAbonent = document.querySelector('#sum-gas-abonent');
+let inputWaterAbonent = document.querySelector('#input-water-abonent');
 
+let sumGasAbonent = document.querySelector('#sum-gas-abonent');
+let sumWaterAbonent = document.querySelector('#sum-water-abonent');
 
 let sumGas = document.querySelector('#sum-gas');
 let sumWater = document.querySelector('#sum-water');
@@ -31,6 +33,7 @@ card.addEventListener('click', function (event) {
     let tarifLightAfter = inputLightAfter.value;    
     let tarifGas = inputGas.value;
     let tarifWater = inputWater.value;
+    
 
 
     let gasBegin = inputGasBegin.value;
@@ -39,6 +42,8 @@ card.addEventListener('click', function (event) {
 
     let waterBegin = inputWaterBegin.value;
     let waterEnd = inputWaterEnd.value;
+    let waterAbonent = +inputWaterAbonent.value;
+    
 
     let gas = (gasEnd - gasBegin) ;
     let water =   waterEnd - waterBegin;
@@ -53,14 +58,16 @@ card.addEventListener('click', function (event) {
 
     
     console.log(sumGas);
-    sumGas.innerHTML =  (gasEnd - gasBegin) * tarifGas;
-    sumWater.innerHTML = water * tarifWater;
+    sumGas.innerHTML =  ((gasEnd - gasBegin) * tarifGas).toFixed(2);
+    sumWater.innerHTML = (water * tarifWater).toFixed(2);
 
    if (gasAbonent > 0) {
-    sumGasAbonent.innerHTML = ((gas * tarifGas) +gasAbonent);
+    sumGasAbonent.innerHTML = ((gas * tarifGas) +gasAbonent).toFixed(2);
    }
 
-    
+   if (waterAbonent > 0) {
+    sumWaterAbonent.innerHTML = ((water * tarifWater) +waterAbonent).toFixed(2);
+   }
  
    
 });
