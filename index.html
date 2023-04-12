@@ -37,7 +37,7 @@
                         </li>
                         <li class="tariff-list__item">
                             <p class="item-title">Абонплата вода</p>
-                            <input type="text" class="item-input">
+                            <input type="text" class="item-input" id="input-water-abonent">
                         </li>
                     </ul>
                 </section>
@@ -51,13 +51,13 @@
                     <ul class="index-list">
                         <li class="index-list__item item">
                             <p class="item-title">Світло /день</p>
-                            <input type="text" class="item-input" >
-                            <input type="text" class="item-input">
+                            <input type="text" class="item-input" id="day-light-begin">
+                            <input type="text" class="item-input" id="day-light-end">
                         </li>
                         <li class="index-list__item">
                             <p class="item-title">Світло /ніч</p>
-                            <input type="text" class="item-input">
-                            <input type="text" class="item-input">
+                            <input type="text" class="item-input" id="night-light-begin">
+                            <input type="text" class="item-input" id="night-light-end">
                         </li>
                         <li class="index-list__item">
                             <p class="item-title">Газ</p>
@@ -80,8 +80,8 @@
                     <div class="sum__inner">
                         <div class="sum__item">
                             <div class="sum__item-img"><img src="img/icon-flash.png" alt=""></div>
-                            <div class="sum__item-input"></div>
-                            <div class="sum__item-input"></div>
+                            <div class="sum__item-input" id="sum-light"></div>
+                            <div class="sum__item-input">-</div>
                         </div>
                         
                         <div class="sum__item">
@@ -92,12 +92,12 @@
                         <div class="sum__item">
                             <div class="sum__item-img"><img src="img/icon-water.png" alt=""></div>
                             <div class="sum__item-input" id="sum-water"></div>
-                            <div class="sum__item-input"></div>
+                            <div class="sum__item-input" id="sum-water-abonent"></div>
                         </div>
                         
                     </div>
                     <p class="sum-title">Всього з абонплатами</p>
-                    <div class="sum-sum"></div>
+                    <div class="sum-sum" id="sum"></div>
                 </section>
             </div>
         </div>
